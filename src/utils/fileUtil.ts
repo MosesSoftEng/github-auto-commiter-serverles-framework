@@ -24,3 +24,15 @@ const strToBase64 = str => {
     return Buffer.from(str, 'utf8').toString('base64');
 };
 
+/**
+ * base64ToStr
+ *
+ * Decodes a given base64 string.
+ *
+ * @param {string} base64Str The base64 string
+ *
+ * @returns {string} The decoded string.
+ */
+const base64ToStr = base64Str => {
+    return Buffer.from(base64Str, 'base64').toString('utf8');
+};
