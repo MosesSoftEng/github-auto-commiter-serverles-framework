@@ -1,4 +1,18 @@
 /**
+ * Module: commits.ts
+ *
+ * This module contains a functions for getting and updating repository file details
+ */
+import { Octokit } from "octokit"; // Library to help consume Git REST API
+import { CommitDetails } from "src/models/CommitDetails";
+import { CommitterDetails } from "src/models/CommitterDetails";
+
+const octokit = new Octokit({
+    auth: process.env.GITHUB_TOKEN
+});
+
+
+/**
  * getRepoFileDetails
  *
  * Get details for a repository file.
@@ -25,6 +39,8 @@ const getRepoFileDetails = async (commitDetails: CommitDetails) => {
 
     return file;
 };
+
+
 /**
  * saveRepoFileContent
  *
@@ -66,3 +82,5 @@ const saveRepoFileContent = async (
 
     return results;
 };
+
+export { getRepoFileDetails, saveRepoFileContent }
