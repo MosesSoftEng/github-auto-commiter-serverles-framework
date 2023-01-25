@@ -1,4 +1,22 @@
 /**
+ * Module: addNewCommit.ts
+ *
+ * This module contains a function for adding a new commit to a GitHub repository.
+ */
+import emojis from 'src/utils/emojis';
+import { formatJSONResponse } from '@libs/api-gateway';
+
+import { getRepoFileDetails, saveRepoFileContent } from 'src/logic/commits';
+import { base64ToStr, getFileLineCount, strToBase64 } from 'src/utils/fileUtil'
+
+const committerDetails = {
+    owner: 'MosesSoftEng',
+    repo: 'githubemojis',
+    path: 'README.md',
+};
+
+
+/**
  * addNewCommit
  *
  * Adds a new commit to a GitHub repository with the addition of an emoji.
