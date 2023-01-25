@@ -1,4 +1,11 @@
 /**
+ * Module: utils.ts
+ *
+ * This module contains utility functions for encoding and decoding strings and
+ * counting the number of lines in a file.
+ */
+
+/**
  * getFileLineCount
  *
  * Counts the number of lines in a given file.
@@ -36,3 +43,5 @@ const strToBase64 = str => {
 const base64ToStr = base64Str => {
     return Buffer.from(base64Str, 'base64').toString('utf8');
 };
+
+export { getFileLineCount, strToBase64, base64ToStr };
