@@ -11,4 +11,5 @@ const hello: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) =
   });
 };
 
+// Wrap function in middyfy AWS Lambda middleware library to apply all middleware operations.
 export const main = middyfy(hello);
