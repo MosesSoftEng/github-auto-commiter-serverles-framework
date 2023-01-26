@@ -11,10 +11,10 @@ A cloud project to automatically add commits to a repo file at set interval.
 ## Technologies.
 1. AWS Cloud, popular, well documented and affordable. Alternatives: Azure, Google Cloud.
 2. Serverless Framework, support micorservices, Infrastructure as Code IaC, and popular. Alternatives: CloudFormation
-3. Node.js with TypeScript, versatile, and strongly typed. Alternatives: Python, Go
+3. Node.js with TypeScript, versatile, and strongly typed. Alternatives: Python, Go.
 
 ### :computer: More Technologies used.
-CloudWatch Events, AWS Lambda and AWS GateWay, Github.
+CloudWatch Events, AWS Lambda and AWS GateWay, Github API.
 
 ### :office: Development environment, Tools and IDEs.
 Ubuntu 20.04, Visual Studio Code, Github.
@@ -54,9 +54,6 @@ The project will run automatically as scheduled. If you want to run the app, mak
 
 ## License.
 [See license file](LICENSE.txt)
-
-## Badges
-/bower/l/:packageName /github/gist/stars/:gistId 
 
 # :sunglasses: Author.
 This project was done by [SE. Moses Mwangi](https://github.com/MosesSoftEng). Feel free to get intouch with me;
