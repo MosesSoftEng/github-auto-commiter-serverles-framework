@@ -1,4 +1,5 @@
 import { handlerPath } from '@libs/handler-resolver';
+import config from 'src/config/config';
 
 /*
  * Define AWS Lambda function properties here.
@@ -20,7 +21,7 @@ export default {
             schedule: {
                 name: 'github-auto-committer-shedule',
                 description: 'Run github-auto-committer after given time',
-                rate: 'rate(12 hours)',
+                rate: `rate(${config.schedule.interval})`,
                 enabled: true,
             }
         }
