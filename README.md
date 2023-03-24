@@ -1,11 +1,11 @@
 ![Automatic Gear](https://images.unsplash.com/photo-1534675206212-b6bc629ca261?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
 # :book: Github Auto Commiter.
 ## Project Description.
-A cloud project to automatically add commits to a repo file at set interval.
+A AWS cloud project to automatically add commits to a repo file at set interval using Serverless Framework.
 
 ### Features lists.
-1. Pick repository and file to add commits.
-2. Set information to commit to file.
+1. Specify repository and file to add commits.
+2. Specify information to commit to file.
 3. Set interval of commits.
 
 ## Technologies.
